@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        /* setting */
+        :root {
+            --pri: #b26323;
+            --sec: #6d3600;
+        }
+        /* reset */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* design */
+        .lesser {
+            position: relative;
+            top: 100px;
+            margin: 50px auto;
+            width: 420px;
+            height: 350px;
+            /* background-color: white; */
+        }
+        .lesser .face {
+            position: absolute;
+            background-color: var(--pri);
+            border: 10px solid black;
+            border-radius: 50% 50% 50% 50% / 59% 59% 41% 41% ;
+            width: 420px;
+            height: 350px;
+            bottom: 0;
+            /* left: 100px; */
+        }
+
+        .lesser .ear_left {
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            border: 10px solid #000;
+            border-radius: 0% 100% 53% 47% / 0% 41% 59% 100%;
+            transform: rotate(10deg);
+            background-color: var(--sec);
+        }
+        .lesser .ear_left_back {
+            position: absolute;
+            top: -40px;
+            left: -40px;
+            width: 200px;
+            height: 200px;
+            border: 10px solid #000;
+            border-radius: 0% 100% 53% 47% / 0% 41% 59% 100%;
+            transform: rotate(10deg);
+            background-color: #fff;
+        }
+        .lesser .ear_right {
+            position: absolute;
+            top: 0;
+            right: -10px;
+            width: 100px;
+            height: 100px;
+            border: 10px solid #000;
+            border-radius: 0% 100% 53% 47% / 0% 41% 59% 100%;
+            transform: rotate(80deg);
+            background-color: var(--sec);
+        }
+        .lesser .ear_right_back {
+            position: absolute;
+            top: -40px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            border: 10px solid #000;
+            border-radius: 0% 100% 53% 47% / 0% 41% 59% 100%;
+            transform: rotate(80deg);
+            background-color: #fff;
+        }
+        .lesser .brow_left {
+            position: absolute;
+            top: 80px;
+            left: 100px;
+            /* border: 10px solid #000; */
+            border-radius: 50%;
+            width: 60px;
+            height: 30px;
+            transform: rotate(-10deg);
+            background-color: #fff;
+        }
+        .lesser .brow_right {
+            position: absolute;
+            top: 80px;
+            right: 100px;
+            /* border: 10px solid #000; */
+            border-radius: 50%;
+            width: 60px;
+            height: 30px;
+            transform: rotate(10deg);
+            background-color: #fff;
+        }
+        .lesser .eye_left {
+            position: absolute;
+            top: 150px;
+            left: 110px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: #000;
+        }
+        .lesser .eye_right {
+            position: absolute;
+            top: 150px;
+            right: 110px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: #000;
+        }
+        .lesser .eye_left_in {
+            position: absolute;
+            top: 170px;
+            left: 110px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+        }
+        .lesser .eye_right_in {
+            position: absolute;
+            top: 170px;
+            right: 150px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+        }
+        .lesser .mouth_out {
+            position: absolute;
+            top: 170px;
+            left: 120px;
+            /* border: 1px solid #000; */
+            border-radius: 50% 50% 50% 50% / 62% 62% 38% 38% ;
+            width: 180px;
+            height: 160px;
+            background-color: #fff;
+        }
+        .lesser .nose {
+            position: absolute;
+            top: 200px;
+            left: 190px;
+            border-radius: 50%;
+            width: 40px;
+            height: 30px;
+            background-color: #000;
+        }
+        .lesser .nose .nose_in {
+            position: absolute;
+            top: 7px;
+            border: 3px solid #000;
+            border-radius: 50%;
+            width: 10px;
+            height: 7px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="lesser">
+        
+        
+        
+        <div class="ear_left_back"></div>
+        <div class="ear_left"></div>
+        <div class="ear_right_back"></div>
+        <div class="ear_right"></div>
+        
+        <div class="face"></div>
+        <div class="brow_left"></div>
+        <div class="brow_right"></div>
+        <div class="eye_left"></div>
+        <div class="eye_left_in"></div>
+        <div class="eye_right"></div>
+        <div class="eye_right_in"></div>
+        <div class="mouth_out"></div>
+        <div class="nose">
+            <div class="nose_in"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
